@@ -17,4 +17,5 @@ _TODO: study notes, re-derivations, exposition attempts._
 _TODO: extensions, geometrization, higher dimensions._
 
 ## Tests
+See `investigate.py` — Euler characteristic of sphere vs torus triangulations.
 _TODO: topological / geometric computational checks. Add `tests/` here._

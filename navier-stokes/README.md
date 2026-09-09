@@ -17,4 +17,5 @@ _TODO: log approaches tried._
 _TODO: speculative ideas._
 
 ## Tests
+See `investigate.py` — 1-D Burgers viscous (smooth) vs inviscid (shock) comparison.
 _TODO: fluid simulations, numerical blow-up searches. Add `tests/` here._

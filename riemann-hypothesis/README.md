@@ -17,4 +17,5 @@ _TODO: log approaches tried, analytic / computational notes._
 _TODO: speculative ideas, connections to physics, random matrix theory, etc._
 
 ## Tests
+See `investigate.py` — locates zeros on the critical line via Euler-accelerated zeta.
 _TODO: numerical checks of zeros, zeta computations. Add `tests/` here._

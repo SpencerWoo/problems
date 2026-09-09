@@ -17,4 +17,5 @@ _TODO: log approaches tried._
 _TODO: speculative ideas._
 
 ## Tests
+See `investigate.py` — Z2 lattice-gauge Monte Carlo showing Wilson-loop area law.
 _TODO: lattice gauge simulations, numerical checks. Add `tests/` here._
