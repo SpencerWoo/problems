@@ -13,6 +13,32 @@ It does not establish a lower bound against every algorithm. Start with
 [THEORY.md](THEORY.md) for the arguments and [EXPERIMENTS.md](EXPERIMENTS.md) for
 measured results.
 
+## Mixed XOR/CNF research
+
+The next research direction now has two completed experiments, logged in
+[research/FINDINGS.md](research/FINDINGS.md): bounded-width XOR inference followed
+by a Gaussian-basis comparison on identical inputs. The lab includes reproducible
+counterexamples showing why a width bound can miss contradictions and why more
+width can lose under an inference budget.
+
+[hybrid.py](hybrid.py) provides `solve_hybrid` and `solve_gaussian` for ordinary CNF
+conjoined with supplied width-at-most-three XOR equations. Both reuse the original
+DPLL search loop. [mixed.py](mixed.py) saves full input corpora, witnesses, counters,
+and manifests to new run directories and checks existing runs without rewriting
+them. [counterexamples.py](counterexamples.py) reproduces and deletion-minimizes
+the inference-budget counterexample.
+
+There are now **41 test methods**, including independent truth-table checks for
+all 80 mixed-research benchmark formulas and exact replay of the original 76
+baseline results. The [research record](research/README.md) explains how to extend
+the experiments without erasing old findings. GitHub Actions runs the suite on
+Python 3.11 for changes to this lab.
+
+```bash
+python3 -B p-vs-np/mixed.py --check p-vs-np/research/runs/001
+python3 -B p-vs-np/mixed.py --check p-vs-np/research/runs/002
+```
+
 ## Run
 
 Python 3.10+, standard library only. From the repository root:

@@ -113,7 +113,15 @@ def solve_dpll(clauses, n_vars, limit=None):
     """
     formula = normalize(clauses, n_vars)
     _budget(limit)
-    stats = Stats()
+    return _search_dpll(formula, n_vars, limit, Stats())
+
+
+def _search_dpll(formula, n_vars, limit, stats, infer=None):
+    """Shared search loop; optional sound inference returns forced values or None.
+
+    None means conflict. Empty dict means no additional information. Inference
+    is invoked only after CNF unit propagation stalls, before branching.
+    """
     stack = [(formula, {})]
     while stack:
         if limit is not None and stats.nodes >= limit:
@@ -130,6 +138,15 @@ def solve_dpll(clauses, n_vars, limit=None):
                 return Result("SAT", witness, stats)
             unit = next((c[0] for c in current if len(c) == 1), None)
             if unit is None:
+                if infer is not None:
+                    forced = infer(values)
+                    if forced is None:
+                        stats.conflicts += 1
+                        break
+                    if forced:
+                        values.update(forced)
+                        stats.propagations += len(forced)
+                        continue
                 var = abs(min(current, key=len)[0])
                 stats.decisions += 1
                 for value in (True, False):  # stack visits False first

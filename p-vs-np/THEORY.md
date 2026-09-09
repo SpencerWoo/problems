@@ -119,7 +119,7 @@ This is a stronger target than merely separating uniform polynomial time from NP
 A bound limited to one restricted circuit or proof model does not transfer
 automatically to general algorithms.
 
-## Next hypothesis to try to break
+## Hypothesis pursued in R001 and R002
 
 A concrete follow-up is: **Can bounded-width XOR reasoning substantially reduce
 branching on mixtures of parity constraints and ordinary 3-CNF clauses?**
@@ -138,3 +138,9 @@ Finite success cannot establish a polynomial bound. A finite failure can refute
 a universal correctness claim, which is why counterexample hunting is useful
 here. Random formulas are exploratory distributions; they are not a substitute
 for a worst-case argument.
+
+
+The bounded-width and Gaussian-basis experiments above have now been implemented.
+See [the findings log](research/FINDINGS.md) for the measured tradeoffs, two saved
+counterexamples, and the next question: sound recognition of explicit parity
+blocks in CNF. These additions preserve every original baseline result in tests.

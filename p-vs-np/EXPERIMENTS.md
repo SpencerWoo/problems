@@ -54,3 +54,12 @@ absent from this record and JSON because hardware, interpreter, and load affect
 them. Text output provides illustrative wall times. These tests establish finite
 agreements among implementations, not P = NP or P != NP, and UNSAT results are
 not accompanied by independently checkable proof certificates.
+
+
+## Subsequent experiments
+
+This historical baseline is frozen in [research/baseline-v1.json](research/baseline-v1.json)
+and replayed by the regression tests. The mixed XOR/CNF and Gaussian-basis
+comparisons are recorded separately in [research/FINDINGS.md](research/FINDINGS.md),
+with full inputs and 320/400-result snapshots. The current suite has 41 test
+methods; the 16-method count above describes the original baseline run.

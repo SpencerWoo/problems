@@ -1,0 +1,283 @@
+{
+  "cases_sha256": "9f776c8d3befc813c19798dd53e40549f4fe90699c0da5acbbba0aeb1b7a7614",
+  "experiment": "mixed-xor-width-v1",
+  "generator_config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "sizes": [
+      6,
+      10,
+      14
+    ]
+  },
+  "python": "3.11.16",
+  "results_sha256": "a561e434d0853f3dbcb3e2d2e1e7ee16db48f8683fdf340ce7fa31d888fe47ff",
+  "schema_version": 1,
+  "solver_config": {
+    "node_limit": 100000,
+    "pair_limit": 20000,
+    "widths": [
+      0,
+      2,
+      3,
+      4
+    ]
+  },
+  "source_sha256": {
+    "hybrid.py": "a88118bb6df8da367d21ec1227925a59e89c1090f6f01bc78a9ca212345bdb00",
+    "mixed.py": "acce127b00585a47db50cfa0de9c35ae7d2978b83d963a0ad48b02b0871faeec",
+    "parity.py": "973891110d9b06027df853dd814947795093865c4004ec80deaca1188bbb3264",
+    "research/counterexamples.json": "0e80cf0b2c1adc17c56b9d8bf51c7e83a1eead0da6a5ed0e6949b8bc00461c46",
+    "sat.py": "29ba5181797fc80cdba330c5aa25cb8fa01aca84ba7bdddc93b141d270c9624c"
+  },
+  "summary": [
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 117,
+      "family": "cnf-only",
+      "literal_checks": 30586,
+      "width": 0,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 117,
+      "family": "cnf-only",
+      "literal_checks": 30586,
+      "width": 2,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 117,
+      "family": "cnf-only",
+      "literal_checks": 30586,
+      "width": 3,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 117,
+      "family": "cnf-only",
+      "literal_checks": 30586,
+      "width": 4,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 3,
+      "UNKNOWN": 0,
+      "UNSAT": 3,
+      "cases": 6,
+      "decisions": 6,
+      "family": "cycle",
+      "literal_checks": 2160,
+      "width": 0,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 3,
+      "UNKNOWN": 0,
+      "UNSAT": 3,
+      "cases": 6,
+      "decisions": 3,
+      "family": "cycle",
+      "literal_checks": 880,
+      "width": 2,
+      "xor_cutoffs": 0,
+      "xor_pairs": 6603
+    },
+    {
+      "SAT": 3,
+      "UNKNOWN": 0,
+      "UNSAT": 3,
+      "cases": 6,
+      "decisions": 3,
+      "family": "cycle",
+      "literal_checks": 880,
+      "width": 3,
+      "xor_cutoffs": 0,
+      "xor_pairs": 6603
+    },
+    {
+      "SAT": 3,
+      "UNKNOWN": 0,
+      "UNSAT": 3,
+      "cases": 6,
+      "decisions": 4,
+      "family": "cycle",
+      "literal_checks": 1640,
+      "width": 4,
+      "xor_cutoffs": 3,
+      "xor_pairs": 63063
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 115,
+      "family": "mixed",
+      "literal_checks": 32306,
+      "width": 0,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 111,
+      "family": "mixed",
+      "literal_checks": 31289,
+      "width": 2,
+      "xor_cutoffs": 0,
+      "xor_pairs": 812
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 77,
+      "family": "mixed",
+      "literal_checks": 24694,
+      "width": 3,
+      "xor_cutoffs": 0,
+      "xor_pairs": 9467
+    },
+    {
+      "SAT": 22,
+      "UNKNOWN": 0,
+      "UNSAT": 2,
+      "cases": 24,
+      "decisions": 77,
+      "family": "mixed",
+      "literal_checks": 24694,
+      "width": 4,
+      "xor_cutoffs": 0,
+      "xor_pairs": 34353
+    },
+    {
+      "SAT": 24,
+      "UNKNOWN": 0,
+      "UNSAT": 0,
+      "cases": 24,
+      "decisions": 88,
+      "family": "planted",
+      "literal_checks": 23757,
+      "width": 0,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 24,
+      "UNKNOWN": 0,
+      "UNSAT": 0,
+      "cases": 24,
+      "decisions": 83,
+      "family": "planted",
+      "literal_checks": 22349,
+      "width": 2,
+      "xor_cutoffs": 0,
+      "xor_pairs": 788
+    },
+    {
+      "SAT": 24,
+      "UNKNOWN": 0,
+      "UNSAT": 0,
+      "cases": 24,
+      "decisions": 62,
+      "family": "planted",
+      "literal_checks": 17468,
+      "width": 3,
+      "xor_cutoffs": 0,
+      "xor_pairs": 8154
+    },
+    {
+      "SAT": 24,
+      "UNKNOWN": 0,
+      "UNSAT": 0,
+      "cases": 24,
+      "decisions": 62,
+      "family": "planted",
+      "literal_checks": 17468,
+      "width": 4,
+      "xor_cutoffs": 0,
+      "xor_pairs": 26628
+    },
+    {
+      "SAT": 1,
+      "UNKNOWN": 0,
+      "UNSAT": 1,
+      "cases": 2,
+      "decisions": 10,
+      "family": "width-gap",
+      "literal_checks": 589,
+      "width": 0,
+      "xor_cutoffs": 0,
+      "xor_pairs": 0
+    },
+    {
+      "SAT": 1,
+      "UNKNOWN": 0,
+      "UNSAT": 1,
+      "cases": 2,
+      "decisions": 6,
+      "family": "width-gap",
+      "literal_checks": 453,
+      "width": 2,
+      "xor_cutoffs": 0,
+      "xor_pairs": 10
+    },
+    {
+      "SAT": 1,
+      "UNKNOWN": 0,
+      "UNSAT": 1,
+      "cases": 2,
+      "decisions": 4,
+      "family": "width-gap",
+      "literal_checks": 277,
+      "width": 3,
+      "xor_cutoffs": 0,
+      "xor_pairs": 38
+    },
+    {
+      "SAT": 1,
+      "UNKNOWN": 0,
+      "UNSAT": 1,
+      "cases": 2,
+      "decisions": 3,
+      "family": "width-gap",
+      "literal_checks": 197,
+      "width": 4,
+      "xor_cutoffs": 0,
+      "xor_pairs": 49
+    }
+  ]
+}

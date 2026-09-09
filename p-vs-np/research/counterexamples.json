@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "width-three-stalls",
+      "claim_refuted": "Width-three pairwise XOR closure detects every inconsistent system of width-three equations.",
+      "n_vars": 6,
+      "clauses": [],
+      "equations": [
+        [
+          [
+            1,
+            2,
+            3
+          ],
+          0
+        ],
+        [
+          [
+            1,
+            4,
+            5
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            4,
+            6
+          ],
+          0
+        ],
+        [
+          [
+            3,
+            5,
+            6
+          ],
+          1
+        ]
+      ],
+      "expected_status": "UNSAT",
+      "explanation": "Each variable occurs twice, so summing all four rows gives 0=1. Every distinct pair overlaps in exactly one variable, making its sum width four: width three retains no new row. Removing any row makes the system satisfiable."
+    },
+    {
+      "id": "width-is-not-budget-monotone",
+      "n_vars": 6,
+      "pair_limit": 33,
+      "clauses": [],
+      "equations": [
+        [
+          [
+            1,
+            2
+          ],
+          0
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          0
+        ],
+        [
+          [
+            3,
+            4
+          ],
+          0
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          0
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          0
+        ],
+        [
+          [
+            6,
+            1
+          ],
+          1
+        ]
+      ],
+      "expected_status": "UNSAT",
+      "claim_refuted": "Wider XOR closure is always at least as effective under the same pair-attempt budget.",
+      "explanation": "At 33 pair attempts, width two refutes this six-variable cycle; width four spends attempts on extra relations and stops before refutation. The gap depends on this deterministic scheduling and budget, not unsoundness or unrestricted closure strength.",
+      "reproduce": "python3 -B p-vs-np/counterexamples.py"
+    }
+  ]
+}
