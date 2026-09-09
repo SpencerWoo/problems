@@ -17,4 +17,5 @@ _TODO: log approaches tried._
 _TODO: speculative ideas._
 
 ## Tests
+See `investigate.py` — Hodge diamonds and Hodge-class counts for CP^2, K3, etc.
 _TODO: computational algebraic geometry checks. Add `tests/` here._

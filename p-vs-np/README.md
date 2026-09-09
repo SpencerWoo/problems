@@ -17,4 +17,5 @@ _TODO: log approaches tried, proofs, reductions, notes._
 _TODO: speculative ideas, intuitions, what would a solution look like?_
 
 ## Tests
+See `investigate.py` — brute-force 3-SAT vs instant verification + scaling demo.
 _TODO: computational experiments, SAT solvers, complexity benchmarks. Add `tests/` here._

@@ -17,4 +17,5 @@ _TODO: log approaches tried._
 _TODO: speculative ideas._
 
 ## Tests
+See `investigate.py` — point counts, partial L(E,1), integral-point search on two curves.
 _TODO: Sage / PARI numerical checks on curves. Add `tests/` here._
