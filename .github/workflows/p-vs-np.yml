@@ -1,0 +1,24 @@
+name: P vs NP regression tests
+
+on:
+  push:
+    paths:
+      - 'p-vs-np/**'
+      - '.github/workflows/p-vs-np.yml'
+  pull_request:
+    paths:
+      - 'p-vs-np/**'
+      - '.github/workflows/p-vs-np.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  research-regressions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python -B -m unittest discover -s p-vs-np/tests -v
